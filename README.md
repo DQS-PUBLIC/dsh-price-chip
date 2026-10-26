@@ -10,9 +10,8 @@ The chip sits at the bottom of the left sidebar. It shows:
 - the model's price per **1M tokens** for **cache hit / cache miss / output**, in CNY;
 - the DeepSeek account **balance** and **today's spend**, refreshed every 30 seconds.
 
-Clicking the chip opens a popover with the full breakdown: the three prices with
-their unit, how much today's spend came from cache hits, cache misses and output,
-which model produced it, and when the price period next switches.
+Clicking the chip opens a popover with the three prices and their unit, the
+account balance, today's spend, and when the price period next switches.
 
 ## Install
 
