@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Model Pricing",
+    "description": "Pins the current price period (off-peak/peak) and the selected model's cache-hit, cache-miss, and output prices (CNY per million tokens) in the sidebar."
+  }
+}

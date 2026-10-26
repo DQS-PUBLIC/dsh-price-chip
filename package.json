@@ -1,0 +1,51 @@
+{
+  "name": "dsh-price-chip",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Sidebar chip showing DeepSeek's current price period, the selected model's per-million-token prices, the account balance and today's spend.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DQS-PUBLIC/dsh-price-chip.git"
+  },
+  "homepage": "https://github.com/DQS-PUBLIC/dsh-price-chip#readme",
+  "bugs": {
+    "url": "https://github.com/DQS-PUBLIC/dsh-price-chip/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "pricing",
+    "balance",
+    "sidebar"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-model-selection"
+      ]
+    }
+  }
+}
